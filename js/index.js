@@ -172,23 +172,23 @@ if  (autoplay == '1') {
 
 //========== Adding touch & swipe support ==========//
 
-// $('#loop-slider').mousedown(function(e) {
-// 	var vpwidth = document.documentElement.clientWidth, //window width
-// 		startpx = e.clientX, //initial click
-// 		start = (startpx / vpwidth) * 100 // convert to vw value 
-// 	cat = $('#loop-slider ul').css('transform').split(/[()]/)[1], //wizardry
-// 		tacocat = cat.split(',')[4], //initial position of transform value
-// 		tacocatvw = Math.abs((tacocat / vpwidth) * 100); //convert to vw
-// 	console.log(tacocatvw);
+ $('#loop-slider').mousedown(function(e) {
+ 	var vpwidth = document.documentElement.clientWidth, //window width
+ 		startpx = e.clientX, //initial click
+ 		start = (startpx / vpwidth) * 100 // convert to vw value 
+ 	cat = $('#loop-slider ul').css('transform').split(/[()]/)[1], //wizardry
+ 		tacocat = cat.split(',')[4], //initial position of transform value
+ 		tacocatvw = Math.abs((tacocat / vpwidth) * 100); //convert to vw
+ 	console.log(tacocatvw);
 
-// 	$(document).mousemove(function(e) {
-// 		var pxvalue = Math.round(Math.sqrt(Math.pow(start - event.clientX, 2))), //distance traveled by mouse
-// 			vwvalue = (pxvalue / vpwidth) * 100, //convert to vw
-// 			pleasework = -Math.abs(tacocatvw + (start - vwvalue));
+ 	$(document).mousemove(function(e) {
+ 		var pxvalue = Math.round(Math.sqrt(Math.pow(start - event.clientX, 2))), //distance traveled by mouse
+ 			vwvalue = (pxvalue / vpwidth) * 100, //convert to vw
+ 			pleasework = -Math.abs(tacocatvw + (start - vwvalue));
 
-// 		if (e.which == 1) {
-// 			$('#loop-slider ul').css({ 'transform': 'translate3d(' + pleasework + 'vw, 0px, 0px', 'transition-duration': '0s' });
-// 		}
-// 	});
+ 		if (e.which == 1) {
+ 			$('#loop-slider ul').css({ 'transform': 'translate3d(' + pleasework + 'vw, 0px, 0px', 'transition-duration': '0s' });
+ 		}
+ 	});
 
-// });
+ });
