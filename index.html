@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+
+    <script src="js/index.js" defer></script>
+
+
 </head>
 <body>
+    <main>
         <!-- <div class="panel">
             
             <a href="test.zip" download target="_blank" class="download button1">
@@ -24,6 +28,21 @@
     <div class="main-div">
         <h1 id="name" class="text">RVT ADVENTURES</h1>
         <iframe id="video"  src="https://www.youtube.com/embed/DKVfbqx7ct8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <div id="loop-slider" data-autoplay="true" data-speed="8000">
+            <ul id="img-group">
+              <li class="slide"><img class="slide_photo" src="photo/screenshot_000.jpg"></img></li>
+              <li class="slide"><img class="slide_photo" src="photo/screenshot_009.jpg"></img></li>
+              <li class="slide"><img class="slide_photo" src="photo/screenshot_010.jpg"></img></li>
+              <li class="slide"><img class="slide_photo" src="photo/screenshot_013.jpg"></img></li>
+              <li class="slide"><img class="slide_photo" src="photo/screenshot_014.jpg"></img></li>
+
+            </ul>
+          </div>
     </div>
+
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
 </body>
 </html>
