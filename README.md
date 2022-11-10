@@ -2,4 +2,4 @@
 project web-site 
 
 vebsite projektam
-https://maksimsvisockis01.github.io/WEB/
+## https://kkozemjakins.github.io/WEB_test_slider/
