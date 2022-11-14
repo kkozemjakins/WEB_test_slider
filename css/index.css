@@ -8,6 +8,12 @@ body{
   background-attachment: fixed;
 }
 
+@media only screen and ( max-width: 640px ) {
+  .fullwidth-box { 
+    background-image: url(../photo/backfoto.png);
+  }
+}
+
 .main-div{
   background-color: #262626;
   margin:auto;
@@ -59,7 +65,7 @@ body{
   margin-right: auto;
   margin-top: 50px;
   width: 90%;
-  height: 500px;
+  height: 10%;
 }
 @media (max-width: 920px) {
   #loop-slider {
