@@ -52,12 +52,24 @@ body{
   
 }
 
+:root {
+  --slide_heigth: ;
+}
+
 .slide_photo{
   width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+#bg_color{
+  background-color: #141313;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 
 #loop-slider {
-  background-color: #141313;
   position: relative;
   overflow: hidden;
   display: block;
@@ -65,7 +77,7 @@ body{
   margin-right: auto;
   margin-top: 50px;
   width: 90%;
-  height: 10%;
+
 }
 @media (max-width: 920px) {
   #loop-slider {
